@@ -1,2 +1,1 @@
-# CCL
-demo repository for CCL
+# React Projects
