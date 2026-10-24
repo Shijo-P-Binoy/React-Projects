@@ -2,7 +2,7 @@ import React from 'react'
 import assets from '../assets/assets'
 
 const Hero = () => {
-    return(
+    return (
         <div id="hero" className="flex flex-col items-center gap-6 py-20 px-4 text-center overflow-hidden text-gray-700 dark:text-white">
             <div className="flex items-center gap-2 border border-gray-300 rounded-full p-1.5 pr-4">
                 <img className="w-20" src={assets.group_profile} alt="" />
