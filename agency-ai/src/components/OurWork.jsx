@@ -23,8 +23,8 @@ const OurWork = () => {
     ]
 
     return (
-        <div 
-            id="our-work" 
+        <div
+            id="our-work"
             className='flex flex-col items-center gap-7 px-4 sm:px-24 xl:px-24 pt-30 text-gray-700 dark:text-white'
         >
             <Title
@@ -34,7 +34,7 @@ const OurWork = () => {
 
             <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl'>
                 {
-                    workData.map((work,index)=>(
+                    workData.map((work, index) => (
                         <div key={index} className='hover:scale-102 duration-500 transition-all cursor-pointer'>
                             <img src={work.image} className='w-full rounded-xl' alt="Work images" />
                             <h3 className='mt-3 mb-2 text-lg font-semibold'>{work.title}</h3>
