@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { motion } from 'motion/react'
 
 const ServiceCard = ({ service, index }) => {
 
@@ -17,10 +18,14 @@ const ServiceCard = ({ service, index }) => {
     }
 
     return (
-        <div
+        <motion.div
             className="flex flex-col relative overflow-hidden max-w-lg rounded-xl border border-gray-200 dark:border-gray-700 shadow-2xl shadow-gray-100 dark:shadow-white/10"
             ref={divRef}
             onMouseMove={handleMouseMove}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay:index * 0.2 }}
+            viewport={{ once: true }}
         >
             <div
                 className="pointer-events-none blur-2xl rounded-full bg-linear-to-r from-blue-500 via-indigo-500 to-purple-500 w-75 h-75 absolute z-0 transition-opacity duration-500 mix-blend-lighten opacity-70" style={{ top: position.y - 150, left: position.x - 150 }}
@@ -36,7 +41,7 @@ const ServiceCard = ({ service, index }) => {
             </div>
 
 
-        </div>
+        </motion.div>
     )
 }
 
