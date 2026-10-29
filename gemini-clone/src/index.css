@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 
 
 *{
-    font-family: "Manrope", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 500;
-    cursor: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -18,6 +17,3 @@
     display: flex;
 }
 
-@theme {
-    --color-primary: #5044E5;
-}
