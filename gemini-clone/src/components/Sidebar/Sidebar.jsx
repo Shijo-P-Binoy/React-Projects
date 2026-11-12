@@ -8,7 +8,7 @@ const Sidebar = () => {
 
   return (
     <div className='sidebar'>
-      <div className='top'>
+      <div className='top' style={{alignItems:extended? 'start': ""}} >
         <img onClick={()=> setExtended(!extended)} className='menu' src={assets.menu_icon} alt="" />
         <div className='new-chat'>
           <img src={assets.plus_icon} alt="" />
